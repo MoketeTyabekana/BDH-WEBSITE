@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Arial",sans-serif;
+    box-sizing: border-box;
+}
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #ffffff;
+    color: #fff;
+}
+
+.logo img {
+    height: 40px; /* Adjust height as needed */
+    width: auto; /* Ensures the image retains its aspect ratio */
+}
+
+.nav-container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-container ul li {
+    margin-right: 15px; /* Adjust spacing between links */
+}
+
+.nav-container ul li:last-child {
+    margin-right: 0; /* Remove margin from last item */
+}
+
+.nav-container ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+.nav-container ul li a:hover{
+    color: darkgreen;
+    border-bottom: 2px solid darkgreen;
+    
+   
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .nav-container {
+        width: 100%;
+    }
+}
+
+/* section home */
+
+.home {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5)50%, rgba(255, 255, 255, 0.5)50%),url("img/bdh.jpg");     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #000000;
+    text-align: center;
+    padding: 100px 20px;
+    
+}
+
+
+
+.home .content h2 span{
+    color:darkgreen
+}
+
+.home button{
+    width: 100px;
+    padding: 10px;
+    background: darkgreen;
+    color: #fff;
+    margin-top: 16px;
+    border: none;
+    border-radius: 6px;
+
+}
+
+.home button a{
+    color:#fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content {
+    
+    margin: 0 auto;
+    width: 75%;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease;
+}
+
+p {
+    font-size: 1.2em;
+    animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
