@@ -31,11 +31,11 @@
 }
 
 .nav-container ul li {
-    margin-right: 15px; /* Adjust spacing between links */
+    margin-right: 15px; 
 }
 
 .nav-container ul li:last-child {
-    margin-right: 0; /* Remove margin from last item */
+    margin-right: 0;
 }
 
 .nav-container ul li a {
@@ -126,8 +126,9 @@ p {
     display: flex;
     flex-direction: row;
     gap: 10px;
-    border-top: 10px solid darkgreen;
+    border-top: 5px solid darkgreen;
     padding-top: 30px;
+    margin-bottom:20px;
 }
 
 .about .info .info-card{
@@ -140,10 +141,19 @@ p {
     border: 0.5px solid #c0c0c08a;
     border-radius: 8px;
     text-align: center;
+    background-color: rgba(233, 233, 233, 0.342);
+}
+
+.about .info .info-card:hover{
+    background-color: darkgreen;
+    color:#fff;
+    transition:0.3s ease-in-out;
+    transform:  scale(1.1);
 }
 
 .about .info .info-card p,h3{
     margin: 10px 0;
+
 }
 
 .about .info .icon{
@@ -154,10 +164,10 @@ p {
    width: 100px;
    margin: 20px auto;
    box-shadow: -3px -2px 10px -3px rgba(0,0,0,0.75);
-   justify-content: center;
-   align-items: center;
-   text-align: center;
-   
+   display: flex;
+   justify-content: center; 
+   align-items: center;     
+    
   
 }
 
@@ -175,7 +185,7 @@ p {
 .about .heading{
     width: 100%;
     padding: 16px 0;
-    background-color:lightgray;
+    background-color: rgba(233, 233, 233, 0.342);
     margin: 32px 0;
     text-align: center;
     
