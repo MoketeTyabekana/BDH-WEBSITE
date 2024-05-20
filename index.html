@@ -9,21 +9,26 @@
   <body>
     <!-- Navbar -->
 
-    <div class="navbar">
-      <div class="logo">
-        <a><img src="img/bdhlogo.png" alt="" /></a>
-      </div>
-      <div class="nav-container">
-        <ul>
-          <li><a href="#home">HOME</a></li>
-          <li><a href="#about">ABOUT US</a></li>
-          <li><a href="#services">SERVICES</a></li>
-          <li><a href="#gallery">GALLERY</a></li>
-          <li><a href="#newsupdates">NEWS AND UPDATES</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-        </ul>
+ <div class="navbar">
+    <div class="logo">
+      <a href="#"><img src="img/bdhlogo.png" alt="Logo" /></a>
+    </div>
+    <div class="nav-container">
+      <ul class="nav-links">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT US</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#gallery">GALLERY</a></li>
+        <li><a href="#newsupdates">NEWS AND UPDATES</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
     </div>
+  </div>
 
     <!-- Content -->
     <section class="home" id="home">
@@ -186,4 +191,17 @@
     <section class="newsupdates"></section>
     <section class="contact"></section>
   </body>
+
+  <script>
+
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+});
+
+  </script>
 </html>
